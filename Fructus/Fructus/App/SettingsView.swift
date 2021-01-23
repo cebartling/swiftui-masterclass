@@ -29,9 +29,13 @@ struct SettingsView: View {
                     }
 
                     GroupBox(label: SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")) {
-                        Divider().padding(.vertical, 4)
-
                         SettingsRowView(labelText: "Developer", value: "John / Jane")
+                        SettingsRowView(labelText: "Designer", value: "Robert Petras")
+                        SettingsRowView(labelText: "Compatibility", value: "iOS 14")
+                        SettingsRowView(labelText: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "swiftuimasterclass.com")
+                        SettingsRowView(labelText: "Twitter", linkLabel: "@RobertPetras", linkDestination: "twitter.com/robertpetras")
+                        SettingsRowView(labelText: "SwiftUI", value: "2.0")
+                        SettingsRowView(labelText: "Version", value: "1.1.0")
                     }
                 }
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
