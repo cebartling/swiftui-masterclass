@@ -116,12 +116,12 @@
 		83D4CF9C25B7DA4700A5A777 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				83ABC87525BB50A500986D1D /* SettingsLabelView.swift */,
 				83D4CF8B25B7A07B00A5A777 /* FructusApp.swift */,
 				83D4CF8D25B7A07B00A5A777 /* ContentView.swift */,
 				83D4CFA525B7F73600A5A777 /* OnboardingView.swift */,
 				83ABC86525BA600B00986D1D /* FruitDetailView.swift */,
 				83ABC87225BB15EE00986D1D /* SettingsView.swift */,
-				83ABC87525BB50A500986D1D /* SettingsLabelView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
