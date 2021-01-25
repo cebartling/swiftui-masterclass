@@ -36,6 +36,7 @@
 		83C238DA25BDC80500A5EDE0 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C238D925BDC80500A5EDE0 /* GalleryView.swift */; };
 		83C238DD25BDC81B00A5EDE0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C238DC25BDC81B00A5EDE0 /* MainView.swift */; };
 		83CD49AB25BE8C1000B592DD /* HeadlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD49AA25BE8C1000B592DD /* HeadlingView.swift */; };
+		83CD49AE25BF0EE400B592DD /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD49AD25BF0EE400B592DD /* InsetGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		83C238D925BDC80500A5EDE0 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		83C238DC25BDC81B00A5EDE0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		83CD49AA25BE8C1000B592DD /* HeadlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlingView.swift; sourceTree = "<group>"; };
+		83CD49AD25BF0EE400B592DD /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				83022E2325BE72E1007A3A35 /* AnimalListItemView.swift */,
 				83022E2925BE883F007A3A35 /* AnimalDetailView.swift */,
 				83CD49AA25BE8C1000B592DD /* HeadlingView.swift */,
+				83CD49AD25BF0EE400B592DD /* InsetGalleryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				83C238D725BDC7EB00A5EDE0 /* MapView.swift in Sources */,
 				83C238A025BD1ACC00A5EDE0 /* AfricaApp.swift in Sources */,
 				83C238D425BDC7CC00A5EDE0 /* VideoListView.swift in Sources */,
+				83CD49AE25BF0EE400B592DD /* InsetGalleryView.swift in Sources */,
 				83C238DA25BDC80500A5EDE0 /* GalleryView.swift in Sources */,
 				83022E2125BE4606007A3A35 /* CodableBundleExtension.swift in Sources */,
 			);
