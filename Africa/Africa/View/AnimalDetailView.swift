@@ -36,16 +36,30 @@ struct AnimalDetailView: View {
                 
                 // Gallery
                 Group {
-                    HeadlingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
+                    HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
                     
                     InsetGalleryView(animal: animal)
                 }
                 .padding(.horizontal)
                 
                 // Facts
+                Group {
+                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    
+                    InsetFactView(animal: animal)
+                }
+                .padding(.horizontal)
                 
                 // Description
-                
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about the \(animal.name)")
+                    
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1) // TODO: Why is this used again?
+                }
+                .padding(.horizontal)
+
                 // Map
                 
                 // Link

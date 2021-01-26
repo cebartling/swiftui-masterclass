@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HeadlingView: View {
+struct HeadingView: View {
     let headingImage: String
     let headingText: String
     
@@ -27,7 +27,7 @@ struct HeadlingView: View {
 
 struct HeadlingView_Previews: PreviewProvider {
     static var previews: some View {
-        HeadlingView(headingImage: "photo.on.rectangle.angled",
+        HeadingView(headingImage: "photo.on.rectangle.angled",
                      headingText: "Wilderness in Pictures")
             .previewLayout(.sizeThatFits)
             .padding()
