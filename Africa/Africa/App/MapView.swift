@@ -5,8 +5,8 @@
 //  Created by Christopher Bartling on 1/24/21.
 //
 
-import SwiftUI
 import MapKit
+import SwiftUI
 
 struct MapView: View {
     @State private var region: MKCoordinateRegion = {
@@ -15,9 +15,22 @@ struct MapView: View {
         var mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
         return mapRegion
     }()
-    
+
+    let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
+
     var body: some View {
-        Map(coordinateRegion: $region)
+        Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { location in
+            // MapPin(coordinate: location.location, tint: .accentColor)
+
+            // MapMarker(coordinate: location.location, tint: .accentColor)
+
+            MapAnnotation(coordinate: location.location) {
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32, height: 32, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            }
+        })
     }
 }
 
