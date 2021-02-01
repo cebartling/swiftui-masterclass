@@ -38,6 +38,7 @@
 		83C238DA25BDC80500A5EDE0 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C238D925BDC80500A5EDE0 /* GalleryView.swift */; };
 		83C238DD25BDC81B00A5EDE0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C238DC25BDC81B00A5EDE0 /* MainView.swift */; };
 		83C37B4125C72E7A00F0FE31 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C37B4025C72E7A00F0FE31 /* MapAnnotationView.swift */; };
+		83C37B4425C76BC900F0FE31 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C37B4325C76BC900F0FE31 /* MotionAnimationView.swift */; };
 		83CD49AB25BE8C1000B592DD /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD49AA25BE8C1000B592DD /* HeadingView.swift */; };
 		83CD49AE25BF0EE400B592DD /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD49AD25BF0EE400B592DD /* InsetGalleryView.swift */; };
 		83CD49B225BFC32D00B592DD /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD49B125BFC32D00B592DD /* InsetFactView.swift */; };
@@ -82,6 +83,7 @@
 		83C238D925BDC80500A5EDE0 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		83C238DC25BDC81B00A5EDE0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		83C37B4025C72E7A00F0FE31 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		83C37B4325C76BC900F0FE31 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		83CD49AA25BE8C1000B592DD /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		83CD49AD25BF0EE400B592DD /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		83CD49B125BFC32D00B592DD /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				83CD49BD25C0FC4D00B592DD /* VideoListItemView.swift */,
 				8367048B25C359A7002F8A90 /* VideoPlayerView.swift */,
 				83C37B4025C72E7A00F0FE31 /* MapAnnotationView.swift */,
+				83C37B4325C76BC900F0FE31 /* MotionAnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				83CD49AE25BF0EE400B592DD /* InsetGalleryView.swift in Sources */,
 				83CD49BE25C0FC4D00B592DD /* VideoListItemView.swift in Sources */,
 				83C238DA25BDC80500A5EDE0 /* GalleryView.swift in Sources */,
+				83C37B4425C76BC900F0FE31 /* MotionAnimationView.swift in Sources */,
 				83022E2125BE4606007A3A35 /* CodableBundleExtension.swift in Sources */,
 				8367048C25C359A7002F8A90 /* VideoPlayerView.swift in Sources */,
 			);
