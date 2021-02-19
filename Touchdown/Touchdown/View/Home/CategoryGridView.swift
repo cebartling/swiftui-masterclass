@@ -15,8 +15,13 @@ struct CategoryGridView: View {
                       spacing: columnSpacing,
                       pinnedViews: [],
                       content: {
-                        ForEach(categories) { category in
-                            CategoryItemView(category: category)
+                        Section(
+                            header: SectionView(rotateClockwise: false),
+                            footer: SectionView(rotateClockwise: true)
+                        ) {
+                            ForEach(categories) { category in
+                                CategoryItemView(category: category)
+                            }
                         }
             })
                 .frame(height: 140)
