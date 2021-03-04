@@ -14,16 +14,16 @@ struct ProductDetailView: View {
             NavigationBarDetailView()
                 .padding(.horizontal)
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-            
+
             // HEADER
             HeaderDetailView()
                 .padding(.horizontal)
-            
+
             // DETAIL TOP PART
             TopPartDetailView()
                 .padding(.horizontal)
                 .zIndex(1)
-            
+
             // DETAIL BOTTOM PART
             VStack(alignment: .center, spacing: 0, content: {
                 // RATINGS AND SIZES
@@ -36,22 +36,22 @@ struct ProductDetailView: View {
                     Text(sampleProduct.description)
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.gray)
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/ .leading/*@END_MENU_TOKEN@*/)
                 })
 
                 // QUANTITY AND FAVORITES
                 QuantityFavoriteDetailView()
                     .padding(.vertical, 15)
-                
+
                 // ADD TO CART
                 AddToCartDetailView()
                     .padding(.bottom, 20)
             })
-            .padding(.horizontal)
-            .background(Color.white.clipShape(CustomShape()).padding(.top, -105))
+                .padding(.horizontal)
+                .background(Color.white.clipShape(CustomShape()).padding(.top, -105))
         })
-        .zIndex(0)
-           .ignoresSafeArea(.all, edges: .all)
+            .zIndex(0)
+            .ignoresSafeArea(.all, edges: .all)
             .background(
                 Color(red: sampleProduct.red, green: sampleProduct.green, blue: sampleProduct.blue)
                     .ignoresSafeArea(.all, edges: .all)
