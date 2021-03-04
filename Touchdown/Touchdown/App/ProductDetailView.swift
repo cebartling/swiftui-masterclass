@@ -28,7 +28,7 @@ struct ProductDetailView: View {
             VStack(alignment: .center, spacing: 0, content: {
                 // RATINGS AND SIZES
                 RatingsSizesDetailView()
-                    .padding(.top, -20)
+                    .padding(.top, -10)
                     .padding(.bottom, 20)
 
                 // DESCRIPTION
@@ -40,9 +40,12 @@ struct ProductDetailView: View {
                 })
 
                 // QUANTITY AND FAVORITES
+                QuantityFavoriteDetailView()
+                    .padding(.vertical, 15)
                 
                 // ADD TO CART
-                Spacer()
+                AddToCartDetailView()
+                    .padding(.bottom, 20)
             })
             .padding(.horizontal)
             .background(Color.white.clipShape(CustomShape()).padding(.top, -105))
