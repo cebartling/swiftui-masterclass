@@ -62,15 +62,15 @@
 		831EEFE925F530FE0071CB2E /* Devote */ = {
 			isa = PBXGroup;
 			children = (
-				831EF00025F5895B0071CB2E /* sound-ding.mp3 */,
-				831EEFFF25F5895B0071CB2E /* sound-rise.mp3 */,
-				831EF00125F5895B0071CB2E /* sound-tap.mp3 */,
+				831EF00B25F5A7D50071CB2E /* Extension */,
+				831EF00C25F5A7F60071CB2E /* Model */,
+				831EF00A25F5A7C90071CB2E /* Utility */,
+				831EF00925F5A7BE0071CB2E /* Style */,
+				831EF00625F5A78F0071CB2E /* Sound */,
 				831EEFEA25F530FE0071CB2E /* DevoteApp.swift */,
-				831EEFEC25F530FE0071CB2E /* ContentView.swift */,
+				831EF00725F5A7980071CB2E /* View */,
 				831EEFEE25F530FF0071CB2E /* Assets.xcassets */,
-				831EEFF325F530FF0071CB2E /* Persistence.swift */,
 				831EEFF825F530FF0071CB2E /* Info.plist */,
-				831EEFF525F530FF0071CB2E /* Devote.xcdatamodeld */,
 				831EEFF025F530FF0071CB2E /* Preview Content */,
 			);
 			path = Devote;
@@ -82,6 +82,54 @@
 				831EEFF125F530FF0071CB2E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		831EF00625F5A78F0071CB2E /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				831EF00025F5895B0071CB2E /* sound-ding.mp3 */,
+				831EEFFF25F5895B0071CB2E /* sound-rise.mp3 */,
+				831EF00125F5895B0071CB2E /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		831EF00725F5A7980071CB2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				831EEFEC25F530FE0071CB2E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		831EF00925F5A7BE0071CB2E /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		831EF00A25F5A7C90071CB2E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		831EF00B25F5A7D50071CB2E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		831EF00C25F5A7F60071CB2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				831EEFF325F530FF0071CB2E /* Persistence.swift */,
+				831EEFF525F530FF0071CB2E /* Devote.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
