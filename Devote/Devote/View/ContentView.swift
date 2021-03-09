@@ -11,6 +11,10 @@ import SwiftUI
 struct ContentView: View {
     @State var task: String = ""
 
+    private var isButtonDisabled: Bool {
+        task.isEmpty
+    }
+
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -33,10 +37,11 @@ struct ContentView: View {
                         Text("SAVE")
                         Spacer()
                     })
+                        .disabled(isButtonDisabled)
                         .padding()
                         .font(.headline)
                         .foregroundColor(.white)
-                        .background(Color.pink)
+                        .background(isButtonDisabled ? Color.gray : Color.pink)
                         .cornerRadius(10)
                 }
                 .padding()
@@ -47,7 +52,7 @@ struct ContentView: View {
                             Text(item.task ?? "")
                                 .font(.headline)
                                 .fontWeight(.bold)
-                            
+
                             Text("\(item.timestamp!, formatter: itemFormatter)")
                                 .font(.footnote)
                                 .foregroundColor(.gray)
@@ -59,16 +64,10 @@ struct ContentView: View {
             .navigationBarTitle("Daily Tasks", displayMode: .large)
             .toolbar {
                 #if os(iOS)
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
                 #endif
-
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
             }
         }
     }
@@ -89,6 +88,9 @@ struct ContentView: View {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
+
+            task = ""
+            hideKeyboard()
         }
     }
 
