@@ -62,6 +62,7 @@ struct ContentView: View {
                     TextField("New Task", text: $task)
                         .padding()
                         .background(Color(UIColor.systemGray6))
+                        .cornerRadius(10)
 
                     Button(action: {
                         addItem()
