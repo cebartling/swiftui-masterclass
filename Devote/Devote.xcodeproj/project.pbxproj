@@ -18,6 +18,7 @@
 		831EF00325F5895B0071CB2E /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 831EF00025F5895B0071CB2E /* sound-ding.mp3 */; };
 		831EF00425F5895B0071CB2E /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 831EF00125F5895B0071CB2E /* sound-tap.mp3 */; };
 		831EF01025F708BC0071CB2E /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EF00F25F708BC0071CB2E /* HideKeyboardExtension.swift */; };
+		832015412611630600EA1C25 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832015402611630600EA1C25 /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		831EF00025F5895B0071CB2E /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		831EF00125F5895B0071CB2E /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		831EF00F25F708BC0071CB2E /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		832015402611630600EA1C25 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				831EEFEC25F530FE0071CB2E /* ContentView.swift */,
+				832015402611630600EA1C25 /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				831EEFF425F530FF0071CB2E /* Persistence.swift in Sources */,
+				832015412611630600EA1C25 /* BackgroundImageView.swift in Sources */,
 				831EEFED25F530FE0071CB2E /* ContentView.swift in Sources */,
 				831EF01025F708BC0071CB2E /* HideKeyboardExtension.swift in Sources */,
 				831EEFF725F530FF0071CB2E /* Devote.xcdatamodeld in Sources */,
