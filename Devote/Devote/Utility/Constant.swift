@@ -19,3 +19,5 @@ var backgroundGradient: LinearGradient {
                           startPoint: .topLeading,
                           endPoint: .bottomTrailing)
 }
+
+let feedback = UINotificationFeedbackGenerator()
